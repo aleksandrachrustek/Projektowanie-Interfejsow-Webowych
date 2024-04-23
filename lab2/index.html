@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid h-100 d-flex justify-content-center align-items-center">
+        <div class="custom-box">
+            <h1 class="text-center mb-4">ToDo List</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="taskInput" placeholder="Enter task...">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="addTask()">Add Task</button>
+                    <button class="btn btn-secondary ml-2" type="button" onclick="undoDelete()">Undo Delete</button>
+                </div>
+            </div>
+            <ul id="taskList" class="list-group mt-4 list-unstyled">
+            </ul>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm Deletion</h5>
+                    <button type="button" class="close" onclick="closeModal()">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalText">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="confirmDelete">Confirm</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
