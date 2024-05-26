@@ -18,7 +18,7 @@ const hotelData = [
       image: "./Assets/cards2.jpg"
     },
     {
-        id: 2,
+        id: 3,
         name: "Palm Springs",
         location: "Sintra",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -27,7 +27,7 @@ const hotelData = [
         image: "./Assets/cards3.jpg"
       },
       {
-        id: 2,
+        id: 4,
         name: "Oasis Resort",
         location: "Sienna",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
