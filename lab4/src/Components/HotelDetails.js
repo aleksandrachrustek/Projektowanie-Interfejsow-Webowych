@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import hotelData from './hotelData'; // Importuj dane hotelowe
+import hotelData from './hotelData';
 
 const HotelDetails = () => {
   const { id } = useParams();
