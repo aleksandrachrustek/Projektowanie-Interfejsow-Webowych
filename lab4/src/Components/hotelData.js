@@ -9,7 +9,7 @@ const hotelData = [
       image: "./Assets/cards1.jpg"
     },
     {
-      id: 3,
+      id: 2,
       name: "Serene Retreat",
       location: "Madrid",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
